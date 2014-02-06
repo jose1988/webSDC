@@ -19,6 +19,10 @@
                     <h:inputText id="idban" value="#{bandejaController.selected.idban}" title="#{bundle.EditBandejaTitle_idban}" required="true" requiredMessage="#{bundle.EditBandejaRequiredMessage_idban}"/>
                     <h:outputLabel value="#{bundle.EditBandejaLabel_leidoban}" for="leidoban" />
                     <h:inputText id="leidoban" value="#{bandejaController.selected.leidoban}" title="#{bundle.EditBandejaTitle_leidoban}" required="true" requiredMessage="#{bundle.EditBandejaRequiredMessage_leidoban}"/>
+                    <h:outputLabel value="#{bundle.EditBandejaLabel_idusu}" for="idusu" />
+                    <h:inputText id="idusu" value="#{bandejaController.selected.idusu}" title="#{bundle.EditBandejaTitle_idusu}" required="true" requiredMessage="#{bundle.EditBandejaRequiredMessage_idusu}"/>
+                    <h:outputLabel value="#{bundle.EditBandejaLabel_idgdp}" for="idgdp" />
+                    <h:inputText id="idgdp" value="#{bandejaController.selected.idgdp}" title="#{bundle.EditBandejaTitle_idgdp}" />
                     <h:outputLabel value="#{bundle.EditBandejaLabel_idpaq}" for="idpaq" />
                     <h:selectOneMenu id="idpaq" value="#{bandejaController.selected.idpaq}" title="#{bundle.EditBandejaTitle_idpaq}" >
                         <f:selectItems value="#{paqueteController.itemsAvailableSelectOne}"/>
@@ -27,10 +31,6 @@
                     <h:selectOneMenu id="idiba" value="#{bandejaController.selected.idiba}" title="#{bundle.EditBandejaTitle_idiba}" required="true" requiredMessage="#{bundle.EditBandejaRequiredMessage_idiba}">
                         <f:selectItems value="#{infobandejaController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
-                    <h:outputLabel value="#{bundle.EditBandejaLabel_idusu}" for="idusu" />
-                    <h:inputText id="idusu" value="#{bandejaController.selected.idusu}" title="#{bundle.EditBandejaTitle_idusu}" required="true" requiredMessage="#{bundle.EditBandejaRequiredMessage_idusu}"/>
-                    <h:outputLabel value="#{bundle.EditBandejaLabel_idgdp}" for="idgdp" />
-                    <h:inputText id="idgdp" value="#{bandejaController.selected.idgdp}" title="#{bundle.EditBandejaTitle_idgdp}" />
                 </h:panelGrid>
                 <h:commandLink action="#{bandejaController.update}" value="#{bundle.EditBandejaSaveLink}"/>
                 <br />

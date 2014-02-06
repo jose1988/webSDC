@@ -17,20 +17,28 @@
                 <h:panelGrid columns="2">
                     <h:outputText value="#{bundle.ViewValijaLabel_idval}"/>
                     <h:outputText value="#{valijaController.selected.idval}" title="#{bundle.ViewValijaTitle_idval}"/>
-                    <h:outputText value="#{bundle.ViewValijaLabel_origenval}"/>
-                    <h:outputText value="#{valijaController.selected.origenval}" title="#{bundle.ViewValijaTitle_origenval}"/>
-                    <h:outputText value="#{bundle.ViewValijaLabel_destinoval}"/>
-                    <h:outputText value="#{valijaController.selected.destinoval}" title="#{bundle.ViewValijaTitle_destinoval}"/>
+                    <h:outputText value="#{bundle.ViewValijaLabel_asuntoval}"/>
+                    <h:outputText value="#{valijaController.selected.asuntoval}" title="#{bundle.ViewValijaTitle_asuntoval}"/>
                     <h:outputText value="#{bundle.ViewValijaLabel_fechaval}"/>
                     <h:outputText value="#{valijaController.selected.fechaval}" title="#{bundle.ViewValijaTitle_fechaval}">
                         <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                     </h:outputText>
-                    <h:outputText value="#{bundle.ViewValijaLabel_asuntoval}"/>
-                    <h:outputText value="#{valijaController.selected.asuntoval}" title="#{bundle.ViewValijaTitle_asuntoval}"/>
+                    <h:outputText value="#{bundle.ViewValijaLabel_fechaalerval}"/>
+                    <h:outputText value="#{valijaController.selected.fechaalerval}" title="#{bundle.ViewValijaTitle_fechaalerval}">
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewValijaLabel_statusval}"/>
+                    <h:outputText value="#{valijaController.selected.statusval}" title="#{bundle.ViewValijaTitle_statusval}"/>
+                    <h:outputText value="#{bundle.ViewValijaLabel_zoomval}"/>
+                    <h:outputText value="#{valijaController.selected.zoomval}" title="#{bundle.ViewValijaTitle_zoomval}"/>
                     <h:outputText value="#{bundle.ViewValijaLabel_iddval}"/>
                     <h:outputText value="#{valijaController.selected.iddval}" title="#{bundle.ViewValijaTitle_iddval}"/>
                     <h:outputText value="#{bundle.ViewValijaLabel_idusu}"/>
                     <h:outputText value="#{valijaController.selected.idusu}" title="#{bundle.ViewValijaTitle_idusu}"/>
+                    <h:outputText value="#{bundle.ViewValijaLabel_origenval}"/>
+                    <h:outputText value="#{valijaController.selected.origenval}" title="#{bundle.ViewValijaTitle_origenval}"/>
+                    <h:outputText value="#{bundle.ViewValijaLabel_destinoval}"/>
+                    <h:outputText value="#{valijaController.selected.destinoval}" title="#{bundle.ViewValijaTitle_destinoval}"/>
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{valijaController.destroyAndView}" value="#{bundle.ViewValijaDestroyLink}"/>

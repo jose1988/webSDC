@@ -21,10 +21,6 @@
                     <h:inputText id="nombrepri" value="#{prioridadController.selected.nombrepri}" title="#{bundle.EditPrioridadTitle_nombrepri}" required="true" requiredMessage="#{bundle.EditPrioridadRequiredMessage_nombrepri}"/>
                     <h:outputLabel value="#{bundle.EditPrioridadLabel_descripcionpri}" for="descripcionpri" />
                     <h:inputText id="descripcionpri" value="#{prioridadController.selected.descripcionpri}" title="#{bundle.EditPrioridadTitle_descripcionpri}" />
-                    <h:outputLabel value="#{bundle.EditPrioridadLabel_paquete}" for="paquete" />
-                    <h:selectOneMenu id="paquete" value="#{prioridadController.selected.paquete}" title="#{bundle.EditPrioridadTitle_paquete}" >
-                        <f:selectItems value="#{paqueteController.itemsAvailableSelectOne}"/>
-                    </h:selectOneMenu>
                 </h:panelGrid>
                 <h:commandLink action="#{prioridadController.update}" value="#{bundle.EditPrioridadSaveLink}"/>
                 <br />

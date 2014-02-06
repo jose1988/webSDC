@@ -21,12 +21,12 @@
                     <h:inputText id="nombreadj" value="#{adjuntoController.selected.nombreadj}" title="#{bundle.CreateAdjuntoTitle_nombreadj}" required="true" requiredMessage="#{bundle.CreateAdjuntoRequiredMessage_nombreadj}"/>
                     <h:outputLabel value="#{bundle.CreateAdjuntoLabel_urladj}" for="urladj" />
                     <h:inputText id="urladj" value="#{adjuntoController.selected.urladj}" title="#{bundle.CreateAdjuntoTitle_urladj}" required="true" requiredMessage="#{bundle.CreateAdjuntoRequiredMessage_urladj}"/>
+                    <h:outputLabel value="#{bundle.CreateAdjuntoLabel_iddoc}" for="iddoc" />
+                    <h:inputText id="iddoc" value="#{adjuntoController.selected.iddoc}" title="#{bundle.CreateAdjuntoTitle_iddoc}" />
                     <h:outputLabel value="#{bundle.CreateAdjuntoLabel_idpaq}" for="idpaq" />
                     <h:selectOneMenu id="idpaq" value="#{adjuntoController.selected.idpaq}" title="#{bundle.CreateAdjuntoTitle_idpaq}" >
                         <f:selectItems value="#{paqueteController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
-                    <h:outputLabel value="#{bundle.CreateAdjuntoLabel_iddoc}" for="iddoc" />
-                    <h:inputText id="iddoc" value="#{adjuntoController.selected.iddoc}" title="#{bundle.CreateAdjuntoTitle_iddoc}" />
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{adjuntoController.create}" value="#{bundle.CreateAdjuntoSaveLink}" />

@@ -28,15 +28,9 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_origenpaq}"/>
+                                <h:outputText value="#{bundle.ListPaqueteTitle_asuntopaq}"/>
                             </f:facet>
-                            <h:outputText value="#{item.origenpaq}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_destinopaq}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.destinopaq}"/>
+                            <h:outputText value="#{item.asuntopaq}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
@@ -46,33 +40,17 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_asuntopaq}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.asuntopaq}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_idadj}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.idadj}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_idpri}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.idpri}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_idmen}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.idmen}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
                                 <h:outputText value="#{bundle.ListPaqueteTitle_fechapaq}"/>
                             </f:facet>
                             <h:outputText value="#{item.fechapaq}">
+                                <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_fechaenviopaq}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.fechaenviopaq}">
                                 <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                             </h:outputText>
                         </h:column>
@@ -86,21 +64,51 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_status}"/>
+                                <h:outputText value="#{bundle.ListPaqueteTitle_statuspaq}"/>
                             </f:facet>
-                            <h:outputText value="#{item.status}"/>
+                            <h:outputText value="#{item.statuspaq}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_seguimiento}"/>
+                                <h:outputText value="#{bundle.ListPaqueteTitle_localizacionpaq}"/>
                             </f:facet>
-                            <h:outputText value="#{item.seguimiento}"/>
+                            <h:outputText value="#{item.localizacionpaq}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListPaqueteTitle_prioridad}"/>
+                                <h:outputText value="#{bundle.ListPaqueteTitle_idadj}"/>
                             </f:facet>
-                            <h:outputText value="#{item.prioridad}"/>
+                            <h:outputText value="#{item.idadj}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_idval}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.idval}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_destinopaq}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.destinopaq}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_origenpaq}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.origenpaq}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_idpri}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.idpri}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPaqueteTitle_idmen}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.idmen}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">

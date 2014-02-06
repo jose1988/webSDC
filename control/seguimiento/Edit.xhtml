@@ -15,16 +15,20 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_idpaq}" for="idpaq" />
-                    <h:inputText id="idpaq" value="#{seguimientoController.selected.idpaq}" title="#{bundle.EditSeguimientoTitle_idpaq}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_idpaq}"/>
-                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_idrol}" for="idrol" />
-                    <h:inputText id="idrol" value="#{seguimientoController.selected.idrol}" title="#{bundle.EditSeguimientoTitle_idrol}" />
+                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_idseg}" for="idseg" />
+                    <h:inputText id="idseg" value="#{seguimientoController.selected.idseg}" title="#{bundle.EditSeguimientoTitle_idseg}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_idseg}"/>
+                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_fechaseg}" for="fechaseg" />
+                    <h:inputText id="fechaseg" value="#{seguimientoController.selected.fechaseg}" title="#{bundle.EditSeguimientoTitle_fechaseg}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_fechaseg}">
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_statusseg}" for="statusseg" />
+                    <h:inputText id="statusseg" value="#{seguimientoController.selected.statusseg}" title="#{bundle.EditSeguimientoTitle_statusseg}" />
                     <h:outputLabel value="#{bundle.EditSeguimientoLabel_idusu}" for="idusu" />
-                    <h:selectOneMenu id="idusu" value="#{seguimientoController.selected.idusu}" title="#{bundle.EditSeguimientoTitle_idusu}" >
+                    <h:selectOneMenu id="idusu" value="#{seguimientoController.selected.idusu}" title="#{bundle.EditSeguimientoTitle_idusu}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_idusu}">
                         <f:selectItems value="#{usuarioController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
-                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_paquete}" for="paquete" />
-                    <h:selectOneMenu id="paquete" value="#{seguimientoController.selected.paquete}" title="#{bundle.EditSeguimientoTitle_paquete}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_paquete}">
+                    <h:outputLabel value="#{bundle.EditSeguimientoLabel_idpaq}" for="idpaq" />
+                    <h:selectOneMenu id="idpaq" value="#{seguimientoController.selected.idpaq}" title="#{bundle.EditSeguimientoTitle_idpaq}" required="true" requiredMessage="#{bundle.EditSeguimientoRequiredMessage_idpaq}">
                         <f:selectItems value="#{paqueteController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
                 </h:panelGrid>

@@ -22,15 +22,23 @@
                     <h:dataTable value="#{seguimientoController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListSeguimientoTitle_idpaq}"/>
+                                <h:outputText value="#{bundle.ListSeguimientoTitle_idseg}"/>
                             </f:facet>
-                            <h:outputText value="#{item.idpaq}"/>
+                            <h:outputText value="#{item.idseg}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListSeguimientoTitle_idrol}"/>
+                                <h:outputText value="#{bundle.ListSeguimientoTitle_fechaseg}"/>
                             </f:facet>
-                            <h:outputText value="#{item.idrol}"/>
+                            <h:outputText value="#{item.fechaseg}">
+                                <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListSeguimientoTitle_statusseg}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.statusseg}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
@@ -40,9 +48,9 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListSeguimientoTitle_paquete}"/>
+                                <h:outputText value="#{bundle.ListSeguimientoTitle_idpaq}"/>
                             </f:facet>
-                            <h:outputText value="#{item.paquete}"/>
+                            <h:outputText value="#{item.idpaq}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">

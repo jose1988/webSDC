@@ -21,12 +21,12 @@
                     <h:inputText id="nombreadj" value="#{adjuntoController.selected.nombreadj}" title="#{bundle.EditAdjuntoTitle_nombreadj}" required="true" requiredMessage="#{bundle.EditAdjuntoRequiredMessage_nombreadj}"/>
                     <h:outputLabel value="#{bundle.EditAdjuntoLabel_urladj}" for="urladj" />
                     <h:inputText id="urladj" value="#{adjuntoController.selected.urladj}" title="#{bundle.EditAdjuntoTitle_urladj}" required="true" requiredMessage="#{bundle.EditAdjuntoRequiredMessage_urladj}"/>
+                    <h:outputLabel value="#{bundle.EditAdjuntoLabel_iddoc}" for="iddoc" />
+                    <h:inputText id="iddoc" value="#{adjuntoController.selected.iddoc}" title="#{bundle.EditAdjuntoTitle_iddoc}" />
                     <h:outputLabel value="#{bundle.EditAdjuntoLabel_idpaq}" for="idpaq" />
                     <h:selectOneMenu id="idpaq" value="#{adjuntoController.selected.idpaq}" title="#{bundle.EditAdjuntoTitle_idpaq}" >
                         <f:selectItems value="#{paqueteController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
-                    <h:outputLabel value="#{bundle.EditAdjuntoLabel_iddoc}" for="iddoc" />
-                    <h:inputText id="iddoc" value="#{adjuntoController.selected.iddoc}" title="#{bundle.EditAdjuntoTitle_iddoc}" />
                 </h:panelGrid>
                 <h:commandLink action="#{adjuntoController.update}" value="#{bundle.EditAdjuntoSaveLink}"/>
                 <br />

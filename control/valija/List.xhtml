@@ -28,15 +28,9 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListValijaTitle_origenval}"/>
+                                <h:outputText value="#{bundle.ListValijaTitle_asuntoval}"/>
                             </f:facet>
-                            <h:outputText value="#{item.origenval}"/>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListValijaTitle_destinoval}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.destinoval}"/>
+                            <h:outputText value="#{item.asuntoval}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
@@ -48,9 +42,23 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">
-                                <h:outputText value="#{bundle.ListValijaTitle_asuntoval}"/>
+                                <h:outputText value="#{bundle.ListValijaTitle_fechaalerval}"/>
                             </f:facet>
-                            <h:outputText value="#{item.asuntoval}"/>
+                            <h:outputText value="#{item.fechaalerval}">
+                                <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListValijaTitle_statusval}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.statusval}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListValijaTitle_zoomval}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.zoomval}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">
@@ -63,6 +71,18 @@
                                 <h:outputText value="#{bundle.ListValijaTitle_idusu}"/>
                             </f:facet>
                             <h:outputText value="#{item.idusu}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListValijaTitle_origenval}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.origenval}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListValijaTitle_destinoval}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.destinoval}"/>
                         </h:column>
                         <h:column>
                             <f:facet name="header">

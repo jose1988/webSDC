@@ -15,14 +15,18 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputText value="#{bundle.ViewSeguimientoLabel_idpaq}"/>
-                    <h:outputText value="#{seguimientoController.selected.idpaq}" title="#{bundle.ViewSeguimientoTitle_idpaq}"/>
-                    <h:outputText value="#{bundle.ViewSeguimientoLabel_idrol}"/>
-                    <h:outputText value="#{seguimientoController.selected.idrol}" title="#{bundle.ViewSeguimientoTitle_idrol}"/>
+                    <h:outputText value="#{bundle.ViewSeguimientoLabel_idseg}"/>
+                    <h:outputText value="#{seguimientoController.selected.idseg}" title="#{bundle.ViewSeguimientoTitle_idseg}"/>
+                    <h:outputText value="#{bundle.ViewSeguimientoLabel_fechaseg}"/>
+                    <h:outputText value="#{seguimientoController.selected.fechaseg}" title="#{bundle.ViewSeguimientoTitle_fechaseg}">
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewSeguimientoLabel_statusseg}"/>
+                    <h:outputText value="#{seguimientoController.selected.statusseg}" title="#{bundle.ViewSeguimientoTitle_statusseg}"/>
                     <h:outputText value="#{bundle.ViewSeguimientoLabel_idusu}"/>
                     <h:outputText value="#{seguimientoController.selected.idusu}" title="#{bundle.ViewSeguimientoTitle_idusu}"/>
-                    <h:outputText value="#{bundle.ViewSeguimientoLabel_paquete}"/>
-                    <h:outputText value="#{seguimientoController.selected.paquete}" title="#{bundle.ViewSeguimientoTitle_paquete}"/>
+                    <h:outputText value="#{bundle.ViewSeguimientoLabel_idpaq}"/>
+                    <h:outputText value="#{seguimientoController.selected.idpaq}" title="#{bundle.ViewSeguimientoTitle_idpaq}"/>
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{seguimientoController.destroyAndView}" value="#{bundle.ViewSeguimientoDestroyLink}"/>
