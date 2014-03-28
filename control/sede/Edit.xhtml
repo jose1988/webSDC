@@ -19,14 +19,18 @@
                     <h:inputText id="idsed" value="#{sedeController.selected.idsed}" title="#{bundle.EditSedeTitle_idsed}" required="true" requiredMessage="#{bundle.EditSedeRequiredMessage_idsed}"/>
                     <h:outputLabel value="#{bundle.EditSedeLabel_nombresed}" for="nombresed" />
                     <h:inputText id="nombresed" value="#{sedeController.selected.nombresed}" title="#{bundle.EditSedeTitle_nombresed}" />
-                    <h:outputLabel value="#{bundle.EditSedeLabel_descripcionsed}" for="descripcionsed" />
-                    <h:inputText id="descripcionsed" value="#{sedeController.selected.descripcionsed}" title="#{bundle.EditSedeTitle_descripcionsed}" />
                     <h:outputLabel value="#{bundle.EditSedeLabel_direccionsed}" for="direccionsed" />
                     <h:inputText id="direccionsed" value="#{sedeController.selected.direccionsed}" title="#{bundle.EditSedeTitle_direccionsed}" />
                     <h:outputLabel value="#{bundle.EditSedeLabel_telefonosed}" for="telefonosed" />
                     <h:inputText id="telefonosed" value="#{sedeController.selected.telefonosed}" title="#{bundle.EditSedeTitle_telefonosed}" />
                     <h:outputLabel value="#{bundle.EditSedeLabel_telefono2sed}" for="telefono2sed" />
                     <h:inputText id="telefono2sed" value="#{sedeController.selected.telefono2sed}" title="#{bundle.EditSedeTitle_telefono2sed}" />
+                    <h:outputLabel value="#{bundle.EditSedeLabel_idorg}" for="idorg" />
+                    <h:selectOneMenu id="idorg" value="#{sedeController.selected.idorg}" title="#{bundle.EditSedeTitle_idorg}" required="true" requiredMessage="#{bundle.EditSedeRequiredMessage_idorg}">
+                        <f:selectItems value="#{organizacionController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditSedeLabel_borradosed}" for="borradosed" />
+                    <h:inputText id="borradosed" value="#{sedeController.selected.borradosed}" title="#{bundle.EditSedeTitle_borradosed}" />
                 </h:panelGrid>
                 <h:commandLink action="#{sedeController.update}" value="#{bundle.EditSedeSaveLink}"/>
                 <br />

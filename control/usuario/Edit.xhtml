@@ -25,8 +25,6 @@
                     <h:inputText id="correousu" value="#{usuarioController.selected.correousu}" title="#{bundle.EditUsuarioTitle_correousu}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_correousu}"/>
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_userusu}" for="userusu" />
                     <h:inputText id="userusu" value="#{usuarioController.selected.userusu}" title="#{bundle.EditUsuarioTitle_userusu}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_userusu}"/>
-                    <h:outputLabel value="#{bundle.EditUsuarioLabel_passwordusu}" for="passwordusu" />
-                    <h:inputText id="passwordusu" value="#{usuarioController.selected.passwordusu}" title="#{bundle.EditUsuarioTitle_passwordusu}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_passwordusu}"/>
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_statususu}" for="statususu" />
                     <h:inputText id="statususu" value="#{usuarioController.selected.statususu}" title="#{bundle.EditUsuarioTitle_statususu}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_statususu}"/>
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_telefonousu}" for="telefonousu" />
@@ -37,10 +35,6 @@
                     <h:inputText id="direccionusu" value="#{usuarioController.selected.direccionusu}" title="#{bundle.EditUsuarioTitle_direccionusu}" />
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_direccion2usu}" for="direccion2usu" />
                     <h:inputText id="direccion2usu" value="#{usuarioController.selected.direccion2usu}" title="#{bundle.EditUsuarioTitle_direccion2usu}" />
-                    <h:outputLabel value="#{bundle.EditUsuarioLabel_idsed}" for="idsed" />
-                    <h:selectOneMenu id="idsed" value="#{usuarioController.selected.idsed}" title="#{bundle.EditUsuarioTitle_idsed}" >
-                        <f:selectItems value="#{sedeController.itemsAvailableSelectOne}"/>
-                    </h:selectOneMenu>
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_idrol}" for="idrol" />
                     <h:selectOneMenu id="idrol" value="#{usuarioController.selected.idrol}" title="#{bundle.EditUsuarioTitle_idrol}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_idrol}">
                         <f:selectItems value="#{rolController.itemsAvailableSelectOne}"/>

@@ -19,14 +19,18 @@
                     <h:inputText id="idsed" value="#{sedeController.selected.idsed}" title="#{bundle.CreateSedeTitle_idsed}" required="true" requiredMessage="#{bundle.CreateSedeRequiredMessage_idsed}"/>
                     <h:outputLabel value="#{bundle.CreateSedeLabel_nombresed}" for="nombresed" />
                     <h:inputText id="nombresed" value="#{sedeController.selected.nombresed}" title="#{bundle.CreateSedeTitle_nombresed}" />
-                    <h:outputLabel value="#{bundle.CreateSedeLabel_descripcionsed}" for="descripcionsed" />
-                    <h:inputText id="descripcionsed" value="#{sedeController.selected.descripcionsed}" title="#{bundle.CreateSedeTitle_descripcionsed}" />
                     <h:outputLabel value="#{bundle.CreateSedeLabel_direccionsed}" for="direccionsed" />
                     <h:inputText id="direccionsed" value="#{sedeController.selected.direccionsed}" title="#{bundle.CreateSedeTitle_direccionsed}" />
                     <h:outputLabel value="#{bundle.CreateSedeLabel_telefonosed}" for="telefonosed" />
                     <h:inputText id="telefonosed" value="#{sedeController.selected.telefonosed}" title="#{bundle.CreateSedeTitle_telefonosed}" />
                     <h:outputLabel value="#{bundle.CreateSedeLabel_telefono2sed}" for="telefono2sed" />
                     <h:inputText id="telefono2sed" value="#{sedeController.selected.telefono2sed}" title="#{bundle.CreateSedeTitle_telefono2sed}" />
+                    <h:outputLabel value="#{bundle.CreateSedeLabel_idorg}" for="idorg" />
+                    <h:selectOneMenu id="idorg" value="#{sedeController.selected.idorg}" title="#{bundle.CreateSedeTitle_idorg}" required="true" requiredMessage="#{bundle.CreateSedeRequiredMessage_idorg}">
+                        <f:selectItems value="#{organizacionController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateSedeLabel_borradosed}" for="borradosed" />
+                    <h:inputText id="borradosed" value="#{sedeController.selected.borradosed}" title="#{bundle.CreateSedeTitle_borradosed}" />
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{sedeController.create}" value="#{bundle.CreateSedeSaveLink}" />
